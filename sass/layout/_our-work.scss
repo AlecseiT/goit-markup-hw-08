@@ -1,6 +1,9 @@
 .our-work-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-bottom: 94px;
+  }
 }
 
 .our-work__title {
