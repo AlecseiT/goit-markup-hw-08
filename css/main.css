@@ -1064,18 +1064,73 @@ button {
 }
 
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filter-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+.filter-item {
+  margin-right: 8px;
 }
 
 .filter-item:not(:last-child) {
-  margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .filter-item:nth-child(4) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .filter-item:nth-child(3) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-item:nth-child(3) {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-item:nth-child(-n + 5) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .filter-item:last-child {
+    margin-right: 0px;
+  }
 }
 
 .filter-btn {
