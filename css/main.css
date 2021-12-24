@@ -789,6 +789,14 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -796,6 +804,13 @@ button {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--navigation-btn-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .footer__logo {
@@ -812,6 +827,13 @@ button {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-wrapper_address {
+    text-align-last: left;
+    margin-bottom: 0px;
+  }
+}
+
 .footer-address {
   margin-bottom: 8px;
   font-style: normal;
@@ -822,8 +844,20 @@ button {
   color: var(--secondary-color);
 }
 
-.footer-contacts__item {
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    margin-bottom: 9px;
+  }
+}
+
+.footer-contacts__email {
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contacts__email {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-contacts__link {
@@ -849,6 +883,13 @@ button {
 @media screen and (min-width: 768px) {
   .footer-icons-wrapper {
     margin-bottom: 108px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-icons-wrapper {
+    margin-bottom: 0px;
+    margin-top: 12px;
   }
 }
 
@@ -889,6 +930,15 @@ button {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 12px;
+  }
+}
+
 .footer-form__tittle {
   margin-bottom: 20px;
   text-align: center;
@@ -900,6 +950,12 @@ button {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form__tittle {
+    text-align: left;
+  }
+}
+
 .footer-form {
   display: flex;
   flex-direction: column;
@@ -909,6 +965,12 @@ button {
 @media screen and (min-width: 768px) {
   .footer-form {
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer-form {
+    flex-direction: row;
   }
 }
 
@@ -964,9 +1026,10 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-form__email {
     width: 358px;
+    margin-bottom: 0px;
   }
 }
 
@@ -986,6 +1049,12 @@ button {
 .footer-form__button:hover, .footer-form__button:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__button {
+    margin-left: 12px;
+  }
 }
 
 .footer-form-icon {

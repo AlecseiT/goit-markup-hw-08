@@ -1,26 +1,31 @@
 .footer-wrapper_address {
   text-align: center;
   margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    text-align-last: left;
+    margin-bottom: 0px;
+  }
 }
 
 .footer-address {
-  // margin-bottom: 9px;
   margin-bottom: 8px;
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
 
-.footer-contacts__item {
+.footer-contacts__email {
   margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
-// .footer-contacts__item:not(:last-child) {
-//   margin-bottom: 9px;
-// }
 
 .footer-contacts__link {
   font-size: 14px;
