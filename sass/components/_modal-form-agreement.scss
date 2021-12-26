@@ -1,23 +1,25 @@
 .modal-agreement-case {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 30px;
-  text-align: center;
+  @media screen and (min-width: 480px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .modal-agreement__label {
   position: relative;
   display: flex;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71x;
+  align-items: center;
+  font-size: 11px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-second-color);
   &::before {
     content: '';
     display: inline-block;
-    margin-right: 8px;
     width: 16px;
     height: 15px;
     background: var(--secondary-color);
@@ -30,6 +32,9 @@
   .modal-agreement__checkbox:checked + &::before {
     background-color: var(--navigation-btn-color);
     border-color: var(--navigation-btn-color);
+  }
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
   }
 }
 
@@ -49,15 +54,29 @@
 
 .modal-agreement__icon {
   position: absolute;
-  top: 0;
   left: 0;
   fill: transparent;
 }
 
 .modal-agreement__link {
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71x;
+  font-size: 11px;
+  line-height: 1.16x;
   letter-spacing: 0.03em;
   color: var(--navigation-btn-color);
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.modal-agreement__text {
+  margin-left: 8px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
