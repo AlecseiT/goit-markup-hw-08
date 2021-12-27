@@ -1,9 +1,13 @@
 .header__navigation {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .header-navigation-list {
   display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header-navigation__item {

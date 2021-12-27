@@ -1,6 +1,9 @@
 .header-contacts-list {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header-contacts__item:first-child {
