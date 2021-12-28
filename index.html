@@ -39,7 +39,7 @@
           </ul>
           <div class="nivagation-menu__wrapper">
             <button
-              class="menu-button__open menu-toggle js-open-menu"
+              class="menu-button__open js-open-menu"
               aria-expanded="false"
               aria-controls="mobile-menu"
               type="button"
@@ -70,21 +70,14 @@
         </ul>
       </div>
       <div class="header-menu js-menu-container" id="mobile-menu">
-        <button class="header-menu__close menu-toggle js-close-menu" type="button">
+        <button class="header-menu__close js-close-menu" type="button">
           <svg class="menu-close__icon" width="40px" height="40px">
             <use href="./images/icons.svg#icon-close_40px-min"></use>
           </svg>
         </button>
         <ul class="list navigation-menu-list">
           <li class="navigation-menu__item">
-            <a
-              class="
-                link
-                navigation-menu__link navigation-menu--current navigation-menu--current-underline
-              "
-              href="#"
-              >Студия</a
-            >
+            <a class="link navigation-menu__link navigation-menu--current" href="#">Студия</a>
           </li>
           <li class="navigation-menu__item">
             <a class="link navigation-menu__link" href="./portfolio.html">Портофило</a>
@@ -93,32 +86,37 @@
             <a class="link navigation-menu__link" href="">Контакты</a>
           </li>
         </ul>
-        <ul class="list menu-contacts__list">
-          <li class="menu-contacts__item">
-            <a class="link menu-contacts__link-phone" href="tel:+380961111111">
-              +38 096 111 11 11</a
-            >
-          </li>
-          <li class="menu-contacts__item">
-            <a class="link menu-contacts__link-email" href="mailto:info@devstudio.com">
-              info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="list menu-social-network__list">
-          <li class="social-network__item">
-            <a class="link social-network__link" href="#">Instagram</a>
-          </li>
-          <li>
-            <a class="link social-network__link" href="#">Twitter</a>
-          </li>
-          <li>
-            <a class="link social-network__link" href="#">Facebook</a>
-          </li>
-          <li>
-            <a class="link social-network__link" href="#">LinkedIn</a>
-          </li>
-        </ul>
+        <div class="menu-contacts__wrapper">
+          <ul class="list menu-contacts__list">
+            <li class="menu-contacts__item">
+              <a class="link menu-contacts__link-phone" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu-contacts__item">
+              <a class="link menu-contacts__link-email" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="list menu-social-network__list">
+            <li class="social-network__item">
+              <a class="link social-network__link" href="#">Instagram</a>
+              <span class="menu-social-network__line"></span>
+            </li>
+            <li class="social-network__item">
+              <a class="link social-network__link" href="#">Twitter</a>
+              <span class="menu-social-network__line social-network__line--hidden"></span>
+            </li>
+            <li class="social-network__item">
+              <a class="link social-network__link" href="#">Facebook</a>
+              <span class="menu-social-network__line"></span>
+            </li>
+            <li class="social-network__item">
+              <a class="link social-network__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
