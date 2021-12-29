@@ -37,14 +37,14 @@
               <a class="link header-navigation__link" href="">Контакты</a>
             </li>
           </ul>
-          <div class="nivagation-menu__wrapper">
+          <div class="header-navigation__mobile-menu">
             <button
-              class="menu-button__open js-open-menu"
+              class="mobile-menu__button-open js-open-menu"
               aria-expanded="false"
               aria-controls="mobile-menu"
               type="button"
             >
-              <svg class="navigation-menu__icon" width="40px" height="40px">
+              <svg class="mobile-menu__button-open-icon" width="40px" height="40px">
                 <use href="./images/icons.svg#icon-menu_40px-min"></use>
               </svg>
             </button>
@@ -69,51 +69,53 @@
           </li>
         </ul>
       </div>
-      <div class="header-menu js-menu-container" id="mobile-menu">
-        <button class="header-menu__close js-close-menu" type="button">
-          <svg class="menu-close__icon" width="40px" height="40px">
+      <div class="header-mobile-menu__main js-menu-container" id="mobile-menu">
+        <button class="mobile-menu__button-close js-close-menu" type="button">
+          <svg class="mobile-menu__button-close-icon" width="40px" height="40px">
             <use href="./images/icons.svg#icon-close_40px-min"></use>
           </svg>
         </button>
-        <ul class="list navigation-menu-list">
-          <li class="navigation-menu__item">
-            <a class="link navigation-menu__link navigation-menu--current" href="#">Студия</a>
+        <ul class="list navigation-main-menu__list">
+          <li class="navigation-main-menu__item">
+            <a class="link navigation-main-menu__link navigation-main-menu--current" href="#"
+              >Студия</a
+            >
           </li>
-          <li class="navigation-menu__item">
-            <a class="link navigation-menu__link" href="./portfolio.html">Портофило</a>
+          <li class="navigation-main-menu__item">
+            <a class="link navigation-main-menu__link" href="./portfolio.html">Портофило</a>
           </li>
-          <li class="navigation-menu__item">
-            <a class="link navigation-menu__link" href="">Контакты</a>
+          <li class="navigation-main-menu__item">
+            <a class="link navigation-main-menu__link" href="">Контакты</a>
           </li>
         </ul>
-        <div class="menu-contacts__wrapper">
-          <ul class="list menu-contacts__list">
-            <li class="menu-contacts__item">
-              <a class="link menu-contacts__link-phone" href="tel:+380961111111">
+        <div class="contacts-main-menu__wrapper">
+          <ul class="list contacts-main-menu__list">
+            <li class="contacts-main-menu__item">
+              <a class="link contacts-main-menu__link-phone" href="tel:+380961111111">
                 +38 096 111 11 11</a
               >
             </li>
-            <li class="menu-contacts__item">
-              <a class="link menu-contacts__link-email" href="mailto:info@devstudio.com">
+            <li class="contacts-main-menu__item">
+              <a class="link contacts-main-menu__link-email" href="mailto:info@devstudio.com">
                 info@devstudio.com</a
               >
             </li>
           </ul>
-          <ul class="list menu-social-network__list">
-            <li class="social-network__item">
-              <a class="link social-network__link" href="#">Instagram</a>
-              <span class="menu-social-network__line"></span>
+          <ul class="list networks-main-menu__list">
+            <li class="networks-main-menu__item">
+              <a class="link networks-main-menu__link" href="#">Instagram</a>
+              <span class="networks-main-menu__line"></span>
             </li>
-            <li class="social-network__item">
-              <a class="link social-network__link" href="#">Twitter</a>
-              <span class="menu-social-network__line social-network__line--hidden"></span>
+            <li class="networks-main-menu__item">
+              <a class="link networks-main-menu__link" href="#">Twitter</a>
+              <span class="networks-main-menu__line"></span>
             </li>
-            <li class="social-network__item">
-              <a class="link social-network__link" href="#">Facebook</a>
-              <span class="menu-social-network__line"></span>
+            <li class="networks-main-menu__item">
+              <a class="link networks-main-menu__link" href="#">Facebook</a>
+              <span class="networks-main-menu__line"></span>
             </li>
-            <li class="social-network__item">
-              <a class="link social-network__link" href="#">LinkedIn</a>
+            <li class="networks-main-menu__item">
+              <a class="link networks-main-menu__link" href="#">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -646,7 +648,7 @@
       </div>
     </footer>
 
-    <!--------------modal---------------->
+    <!-------------modal---------------->
 
     <div class="backdrope is-hidden" data-modal>
       <div class="modal-wrapper">

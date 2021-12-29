@@ -1,27 +1,5 @@
-.menu-button__open {
-  display: flex;
-  padding: 9px 0;
-  border: none;
-  background-color: transparent;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.navigation-menu__icon {
-  background-color: var(--secondary-color);
-  border: none;
-  fill: var(----main-first-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  .menu-button__open:hover &,
-  .menu-button__open:focus & {
-    fill: var(--navigation-btn-color);
-  }
-}
-
-.header-menu {
+.header-mobile-menu__main {
+  overflow-y: scroll;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -39,12 +17,35 @@
     display: none;
   }
 }
-.header-menu.is-open {
+.header-mobile-menu__main.is-open {
   transform: translateX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-menu__close {
+.mobile-menu__button-open {
+  display: flex;
+  padding: 9px 0;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu__button-open-icon {
+  background-color: var(--secondary-color);
+  border: none;
+  fill: var(----main-first-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .mobile-menu__button-open:hover &,
+  .mobile-menu__button-open:focus & {
+    fill: var(--navigation-btn-color);
+  }
+}
+
+.mobile-menu__button-close {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -54,28 +55,28 @@
   border: none;
 }
 
-.menu-close__icon {
+.mobile-menu__button-close-icon {
   fill: var(----main-first-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  .header-menu__close:hover &,
-  .header-menu__close:focus & {
+  .mobile-menu__button-close:hover &,
+  .mobile-menu__button-close:focus & {
     fill: var(--navigation-btn-color);
   }
 }
 
-.navigation-menu-list {
+.navigation-main-menu__list {
   display: block;
 }
 
-.navigation-menu__item {
+.navigation-main-menu__item {
   &:not(:last-child) {
     margin-bottom: 32px;
   }
 }
 
-.navigation-menu__link {
+.navigation-main-menu__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -91,36 +92,21 @@
   }
 }
 
-.navigation-menu--current {
+.navigation-main-menu--current {
   color: var(--navigation-btn-color);
 }
 
-.menu-contacts__list {
+.contacts-main-menu__list {
   margin-bottom: 64px;
 }
 
-.menu-contacts__item {
+.contacts-main-menu__item {
   &:not(:last-child) {
     margin-bottom: 32px;
   }
 }
 
-.menu-contacts__link-email {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: 0.02em;
-  color: var(--main-second-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: var(--navigation-btn-color);
-  }
-}
-
-.menu-contacts__link-phone {
+.contacts-main-menu__link-phone {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
@@ -135,12 +121,33 @@
   }
 }
 
-.menu-social-network__list {
+.contacts-main-menu__link-email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--main-second-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--navigation-btn-color);
+  }
+}
+
+.networks-main-menu__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.social-network__link {
+.networks-main-menu__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.networks-main-menu__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -155,15 +162,10 @@
   }
 }
 
-.menu-social-network__line {
+.networks-main-menu__line {
   margin-left: 10px;
+  height: 0px;
   width: 22px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
-}
-
-.social-network__item {
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
 }
